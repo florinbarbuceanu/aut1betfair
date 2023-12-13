@@ -1,6 +1,10 @@
 package courses.javabasics;
 
-public class Main {
+import courses.oop.Circle;
+
+public class mainBasic {
+    public static String name = "Test";
+
 
     public static void main(String[] args) {
         System.out.println("Hello world");
@@ -94,12 +98,34 @@ public class Main {
         } while (x1 < 10);
 
         System.out.println("For each in list");
-        int[] numbers = {1, 30, 50, 60, 70, 3, 5, 7, 9,8};
+        int[] numbers = {1, 30, 50, 60, 70, 3, 5, 70, 9, 8};
         int nrPare = 0;
+        int max = numbers[0];
+
         for (int num : numbers) {
-            if (num % 2 == 0)
+            if (isPar(num))
                 nrPare++;
+
+            max = maxim(max, num);
         }
+
         System.out.println("Nr pare:" + nrPare);
+        System.out.println("Max:" + max);
+    }
+
+
+    public static void modifyName(String newName) {
+        name = newName;
+    }
+
+    public static boolean isPar(int nr) {
+        return ((nr % 2) == 0);
+    }
+
+    public static int maxim(int a, int b) {
+        if (a < b)
+            return b;
+        else
+            return a;
     }
 }
