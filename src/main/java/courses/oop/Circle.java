@@ -1,6 +1,6 @@
 package courses.oop;
 
-class Circle {
+public class Circle {
     public static String name;
     private double radius;
 

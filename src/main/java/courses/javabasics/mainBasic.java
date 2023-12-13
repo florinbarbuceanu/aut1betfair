@@ -1,6 +1,5 @@
 package courses.javabasics;
 
-import courses.oop.Circle;
 
 public class mainBasic {
     public static String name = "Test";
