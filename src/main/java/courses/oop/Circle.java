@@ -1,6 +1,6 @@
 package courses.oop;
 
-public class Circle {
+public class Circle extends Shape{
     public static String name;
     private double radius;
 
