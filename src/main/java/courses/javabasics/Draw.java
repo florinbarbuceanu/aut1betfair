@@ -1,5 +1,7 @@
 package courses.javabasics;
 
+import courses.oop.Teacher;
+
 public class Draw {
 
     public static void main(String[] args) {
