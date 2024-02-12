@@ -1,8 +1,8 @@
 package courses.ui.tests;
 
 import courses.ui.utils.BrowsersUtils;
-import courses.ui.utils.ConfigUtils;
-import courses.ui.utils.ConstantUtils;
+import courses.utils.ConfigUtils;
+import courses.utils.ConstantUtils;
 import courses.ui.utils.SeleniumUtils;
 import org.junit.Assert;
 import org.openqa.selenium.Cookie;

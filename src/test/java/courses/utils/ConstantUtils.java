@@ -1,4 +1,4 @@
-package courses.ui.utils;
+package courses.utils;
 
 public class ConstantUtils {
 

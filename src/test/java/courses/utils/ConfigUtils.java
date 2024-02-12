@@ -1,4 +1,4 @@
-package courses.ui.utils;
+package courses.utils;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
