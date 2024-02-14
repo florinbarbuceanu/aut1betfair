@@ -23,7 +23,7 @@ public class RestCountriesApiTests extends BaseControllerTests {
                     statusCode(200).
                     contentType(ContentType.JSON).
                     body("name.official[0]", equalTo("Romania")).
-                    body("currencies.RON.symbol[0]", equalTo("lei")).
+                    body("currencies.RON.symbol[0]", equalTo("leii")).
                     extract().response();
 
         response.getBody().prettyPrint();

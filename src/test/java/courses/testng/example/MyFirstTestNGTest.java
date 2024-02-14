@@ -83,6 +83,17 @@ public class MyFirstTestNGTest {
         count++;
     }
 
+    @Test(groups = "Sanity")
+    public void paramsFromCommandLine() {
+//      get values of variables from system variables
+        String browser = System.getProperty("browser");
+        System.out.println("Run test with browser:" + browser);
+        Assert.assertNotNull(browser);
+        String env = System.getProperty("env");
+        System.out.println("Run tests on env:" + env);
+        Assert.assertNotNull(env);
+    }
+
     @Test(priority = 1, groups = {"Sanity", "Regression"})
     public void loginTest() {
         System.out.println("Test login");
