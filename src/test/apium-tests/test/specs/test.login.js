@@ -1,6 +1,7 @@
 const { expect } = require('@wdio/globals')
 const LoginPage = require('../pageobjects/login.page')
 
+//define tests
 describe('Test Login application', () => {
     it('User should be able to sign in with valid credentials', async () => {
         await LoginPage.signUp('testing123@test.com', 'SuperSecretPassword!')

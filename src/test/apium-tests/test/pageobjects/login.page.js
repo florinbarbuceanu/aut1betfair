@@ -41,6 +41,7 @@ class LoginPage extends Page {
         await this.inputPassword.setValue(password);
         allureReporter.addStep("Repeat password");
         await this.inputRepeatPassword.setValue(password);
+//        scroll to view signUp button
         await $("android=new UiScrollable(new UiSelector().scrollable(true)).scrollToEnd(1,5)");
         await browser.pause(1000);
         allureReporter.addStep("Click on SignUp button");
